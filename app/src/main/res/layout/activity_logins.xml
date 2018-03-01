@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_logins"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="40dp"
+    tools:context="com.example.admin.chat_app.Login_ACTIVITY">
+
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/username_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/usernamel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="USERNAME"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textInputLayout"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:id="@+id/passlay">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/passwordl"
+                    android:layout_marginTop="440dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:text="sign up"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:id="@+id/button6"
+        android:background="@android:color/background_light"
+        android:layout_marginStart="45dp"
+        android:layout_below="@+id/login_form"
+        android:visibility="gone"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginStart="36dp"
+        android:layout_toEndOf="@+id/button6"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="signin"
+        android:text="sign in" />
+
+    <CheckBox
+        android:text="REMEMBER Me :) "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/login_form"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="22dp"
+        android:textColor="@android:color/holo_purple"
+        android:textStyle="normal|italic"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/checkBox"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="22dp"
+        android:onClick="signup"
+        android:text="Click here to SIGN-UP!!"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
+
